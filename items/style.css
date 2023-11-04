@@ -1,20 +1,124 @@
-body {
+* {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
-.header {
+body {
+    background-color: rgb(31, 48, 48);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1a1a1a;
+}
+
+/* .header-photo {
+    background: url(../items/main-photo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+
+.nav {
+    /* height: 64px; */
+    background-color: rgb(0, 0, 0);
     display: flex;
+    gap:12px;
+    align-items: center;
+    padding: 8px;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+}
+
+.nav-items-flex {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-text {
+    color: white;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 10px;
+    animation: text 1s;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.nav-items a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-items a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(48, 43, 43);
 }
 
 .nav-links {
     display: flex;
     gap: 10px;
     list-style: none;
-    
+}
+
+button {
+    font-size: 1em;
+    color: #b815b8;
+    background-color: #1a1a1a;
+}
+button:hover {
+    color: #6139a6;
+    background-color: #1a1a1a;
+}
+
+input:focus {
+    box-shadow: 3px 5px rgb(72, 72, 72);
+}
+
+input {
+    /* box-shadow: 2px 1px #f3efee; */
+    border-radius: 2px;
+    border: 2px solid #ae2f0f;    
 }
 
 a:link {
     text-decoration: none;
+}
+
+.container {
+    margin-top: 80px;
+    color: white;
+    text-align: center;
+}
+
+.animations {
+    margin-top: 32px;
+    position: relative;
+    text-align: center;
 }
