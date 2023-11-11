@@ -4,8 +4,14 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: PublicSans;
+    src: url(./fonts/PublicSans-Regular.ttf);
+}
+
 body {
     background-color: #FFFFFF;
+    font-family: PublicSans;
 }
 
 header {
@@ -18,6 +24,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    
 }
 
 
@@ -30,6 +37,7 @@ header {
 
 #discountColor {
     color: white;
+    
 }
 
 #discountAmount {
@@ -40,35 +48,51 @@ header {
 .button {
     display: flex;
     padding: 12px;
-    background-color: #FA8232;
+    background-color: #EBC80C;
     width: 124px;
-    font-size: 16px;
+    font-size: 14px;
+    gap: 8px;
+}
+
+.button a {
+    color: #191C1F;
+    font-weight: bold;
 }
 
 #rotatedText {
     transform: rotate(-3deg);
     background-color: #F3DE6D;
     padding: 4px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
 }
 
 #fridayText {
     color: white;
     margin-top: 4px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 200;
 }
 
 .mainText {
     color: white;
-    font-family: Public Sans;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: 40px;
     letter-spacing: -0.64px;
-    gap: 8px;
+    display: flex;
+    justify-content: left;
+    margin-left: -8px;
+}
+
+.mainText a {
+    gap: 4px;
 }
 
 .sales-text {
-    font-family: Public Sans;
     font-size: 21px;
     font-weight: bold;
     display: flex;
@@ -80,6 +104,7 @@ header {
     margin-top: 12px;
     justify-content: space-around;
     align-items: center;
+    
 }
 
 .header_title {
@@ -87,11 +112,13 @@ header {
     justify-content: space-evenly;
     text-align: center;
     margin-top: 12px;
+    
 }
 
 .header_title a {
     position: relative;
     left: 78px;
+    
 }
 
 
@@ -100,7 +127,7 @@ header {
     padding: 6px 10px;
     margin-top: 8px;
     margin-right: 16px;
-    background: #ddd;
+    background: #ffffff;
     font-size: 17px;
     border: none;
     cursor: pointer;
@@ -112,13 +139,12 @@ header {
     margin-top: 8px;
     font-size: 17px;
     border: none;
-  }
+}
 
 .nav-text {
     color: #FFF;
     position: relative;
     left: 32px;
-    font-family: Public Sans;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -131,7 +157,6 @@ header {
     position: relative;
     right: 28px;
     gap: 8px;
-    font-family: Public Sans;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -148,7 +173,7 @@ header {
     display: flex;
     position: relative;
     top: 15px;
-    right: 149px;
+    right: 140px;
     gap: 8px;
 }
 
@@ -157,7 +182,7 @@ header {
     overflow: hidden;
     display: flex;
     text-align: center;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
     height: auto;
     gap: 8px;
@@ -168,22 +193,72 @@ header {
     float: left;
     color: #727272;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 8px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 14px;
     gap: 8px;
+    font-family: PublicSans;
+}
+
+.leftContent {
+    margin-left: 156px;
+}
+
+.rightContent {
+    margin-right: 156px;
 }
   
 .navbarMiddle a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #acacac;
+    color: #727272;
 }
   
 .navbarMiddle a.split {
     float: right;
-    background-color: #04AA6D;
-    color: white;
+    color: #727272;
 }
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+
 
 .sale-border{
     border: 1px;
@@ -275,6 +350,7 @@ header {
 
 .p-summer-sales {
     color:#EFD33D;
+    margin-left: 12px;
 }
 
 .p-299 {
@@ -284,6 +360,8 @@ header {
 
 .p-new-google {
     color: white;
+    margin-left: 12px;
+    font-size: 24px;
 }
   
 .widgetShop-1{
@@ -293,6 +371,7 @@ header {
     width: 191px;
     height: 56px;
     font-size: 16px;
+    margin-left: 12px;
     font-weight: bold;
     color: white;
     display: flex;
