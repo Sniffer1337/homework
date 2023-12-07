@@ -9,6 +9,10 @@
     src: url(./fonts/PublicSans-Regular.ttf);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #FFFFFF;
     font-family: PublicSans;
@@ -121,6 +125,11 @@ header {
     position: relative;
     left: 78px;
     
+}
+
+.srchBtn{
+    color: black;
+    border: 1px solid black;
 }
 
 
@@ -476,11 +485,11 @@ main {
   .product-row {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 20px; /* Add margin between rows */
+    margin-bottom: 20px;
   }
 
   .product-card {
-    flex: 0 0 calc(25% - 20px); /* Adjust the width as needed */
+    flex: 0 0 calc(25% - 20px);
     margin: 10px;
     border: 1px solid #ddd;
     padding: 10px;
@@ -506,7 +515,7 @@ main {
   .product-buttons {
     display: none;
     position: absolute;
-    bottom: 10px;
+    bottom: 150px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -514,14 +523,14 @@ main {
   .product-card:hover .product-buttons {
     display: flex;
   }
-
+/* button tan samushao */
   button {
     margin: 5px;
-    padding: 5px 10px;
-    background-color: #4caf50;
+    padding: 15px 15px;
+    background-color: rgb(187, 13, 13);
     color: white;
     border: none;
-    border-radius: 3px;
+    border-radius: 50%;
     cursor: pointer;
   }
 
@@ -554,15 +563,62 @@ main {
     height: 32px; */
   }
 
-  .banner {
-    display: block;
-    padding-top: 740px;
-  }
+  .banner{
+    position: absolute;
+    right: 1024px;
+    /* margin-bottom: 180px; */
+    margin-top: 48px;
+    /* bottom: 1770px; */
+    padding-top: 26px;
+    /* margin-top: 45px; */
+    /* margin-right: 24px; */
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--warning-300, #F3DE6D);
+    border: none;
+    width: 312px;
+    height: 200px;
+ }
+
+.buttonShop {
+    display: inline-flex;
+    border-radius: 3px;
+    background-color: #FA8232;
+    width: 124px;
+    font-size: 14px;
+    gap: 12px;
+    width: 180px;
+    padding: 12px 36px;
+    justify-content: center;
+    align-items: center;
+}
+
+ .bg-color{
+    text-align: center;
+ }
+
+ .danger {
+    color: #BE4646;
+ }
+ .gray {
+    color: #475156;
+ }
+
+ .christmas {
+    color: white;
+    /* margin: 12px; */
+ }
+
 
 
 /* FOOTER */
 
 #footer-main {
+    margin-top: 300px;
     background-color: #191C1F;
     border: solid 1px #333;
     padding: 60px;
@@ -589,6 +645,8 @@ main {
     text-decoration: none;
     color: white;
     font-size: 18px;
+    width: 155px;
+    height: 24px;
     }
     
     .footer-line {
@@ -614,7 +672,7 @@ main {
     padding: 12px;
     background-color: white;
     margin: 8px;
-    border-radius: 50%;
+    border-radius: 100%;
     }
     
     .footerIcons a i {
