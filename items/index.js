@@ -15,7 +15,7 @@ function fetchProducts() {
         displayProducts(filteredProducts);
       });
     })
-    .catch(error => console.error('Error fetching products:', error));
+    .catch(error => console.error('Produqtebi Ver Chaitvirta', error));
 }
 
 function displayProducts(products) {
